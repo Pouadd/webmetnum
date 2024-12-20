@@ -32,13 +32,12 @@ return [
     */
 
     'default' => env('CACHE_DRIVER', 'file'),
-
     'stores' => [
-
-        'array' => [
-            'driver' => 'array',
-            'serialize' => false,
+        'redis' => [
+            'driver' => 'redis',
+            'connection' => env('REDIS_CONNECTION', 'default'),
         ],
+    ],
 
         'database' => [
             'driver' => 'database',
