@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('CACHE_STORE', 'database'),
+    'default' => env('CACHE_STORE', 'file'),
 
     /*
     |--------------------------------------------------------------------------
@@ -30,6 +30,8 @@ return [
     |                    "redis", "dynamodb", "octane", "null"
     |
     */
+
+    'default' => env('CACHE_DRIVER', 'file'),
 
     'stores' => [
 
