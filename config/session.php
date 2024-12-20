@@ -73,7 +73,7 @@ return [
     |
     */
 
-    'connection' => env('SESSION_CONNECTION', null),
+    'connection' => env('SESSION_CONNECTION'),
 
     /*
     |--------------------------------------------------------------------------
@@ -169,7 +169,7 @@ return [
     |
     */
 
-    'secure' => env('SESSION_SECURE_COOKIE', false),
+    'secure' => env('SESSION_SECURE_COOKIE'),
 
     /*
     |--------------------------------------------------------------------------
